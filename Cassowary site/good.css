@@ -1,0 +1,10 @@
+body{
+    background-image: url('imgs/makesweet-43hb9n.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    padding:0;
+    margin:0;
+}

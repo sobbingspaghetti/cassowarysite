@@ -1,0 +1,126 @@
+
+body {
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #899878;
+  }
+
+a:visited, a:hover, a:focus {
+    text-decoration: none;
+    color: #121113;   
+}
+
+a{
+    text-decoration: none;
+}
+
+#options{
+    display: grid;
+    width: 900px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.video-container{
+    position: fixed;
+    height: 100vh; 
+    width: 120vw;
+    overflow: hidden;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.video-container video {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+
+.main-container{
+    display: grid;
+    width: 950px;
+    height: auto;
+    grid-template-rows: 9;
+    grid-template-columns: 2;
+    justify-content: center;
+    background-color: #F7F7F2;
+    border: #E4E6C3 solid 20px;
+    border-radius: 10%;
+    margin: auto;
+    gap: 40px 40px;
+    margin-bottom: 60px; 
+}
+
+.container {
+    display: grid;
+    width: 900px;
+    grid-template-areas: "text images" 
+                         "text images";
+    grid-template: 1fr / 1fr 1fr;
+    justify-content: center;
+  }
+
+
+#footer {
+    grid-template: 1fr / 1fr 1fr 1fr;
+    width: 900px;
+}
+
+#footer img {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 225px;
+    width: auto;
+}
+
+.p1 {
+    grid-area: 1 / 1 / 1 / 1;
+    /*grid-row-start / grid-column-start / grid-row-end / grid-column-end*/
+    width: 450px;
+    text-align: center;
+}
+
+#three p{
+    margin-bottom: 150px;
+}
+
+#two p {
+    margin-bottom: 150px;
+}
+
+h6 {
+    font-size: 18px;
+    text-align: center;
+    color: #121113;  
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 100px;
+    color: #121113;  
+}
+
+.images {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    width: 450px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 10%;
+    margin-bottom: 20px;
+   
+}
+
+#subspecies {
+    grid-area: 1 / 1 / 1 / span 3;
+}
