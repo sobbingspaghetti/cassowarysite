@@ -7,4 +7,33 @@ body{
     width: 100vw;
     padding:0;
     margin:0;
+    z-index: -10;
+}
+
+a:visited, a:hover, a:focus{
+    color:#ccc;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+p{
+    font-size: 24px;
+    color: #ccc;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+p:hover{
+    transform: scale(1.35);
 }

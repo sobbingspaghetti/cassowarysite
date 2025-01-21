@@ -34,7 +34,20 @@ a{
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     padding-top: 20px;
+    color:#121113;
 }
+
+h3{
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+h3:hover{
+    transform: scale(1.2);
+}
+
+
 
 
 
