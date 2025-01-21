@@ -15,12 +15,23 @@ a{
     text-decoration: none;
 }
 
+.link{
+    color: #121113;
+    transition-property: letter-spacing, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.link:hover{
+    letter-spacing: 10px;
+    color:#203a7c 
+}
+
 #options{
     display: grid;
     width: 900px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    padding-top: 20px;
 }
 
 .video-container{
@@ -79,6 +90,17 @@ a{
     width: auto;
 }
 
+h2{
+    color: #121113;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+h2:hover{
+    transform: scale(1.35);
+}
+
 .p1 {
     grid-area: 1 / 1 / 1 / 1;
     /*grid-row-start / grid-column-start / grid-row-end / grid-column-end*/
@@ -97,7 +119,21 @@ a{
 h6 {
     font-size: 18px;
     text-align: center;
-    color: #121113;  
+    color: #121113; 
+    margin: 20px; 
+}
+
+.nav {
+    color:#121113;
+    transition-property: color, font-size;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.nav:hover{
+    color: #899878;
+    font-size: 30px;
 }
 
 p {
@@ -118,9 +154,18 @@ img {
     max-width: 80%;
     border-radius: 10%;
     margin-bottom: 20px;
-   
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+
+img:hover{
+    transform: scale(0.9);
 }
 
 #subspecies {
     grid-area: 1 / 1 / 1 / span 3;
+    padding: 0;
 }
